@@ -9,34 +9,70 @@
   list-style: none;
 }
 
-.login-body,
-.regi-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(to right, #e2e2e2, #c9ffe9);
-  color: #333;
-}
-
-.home-body {
+body {
   background: linear-gradient(to right, #b8ff8c, #c9ffe9);
 }
 
-.collection h1 {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 36px;
-  color: rgba(50, 50, 50, 0.827);
-}
 .collection {
-  max-width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
   animation: fadeUp 1s ease-out;
+}
+.products {
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
 }
 
-.container {
-  margin: 0 15px;
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card {
+  background: rgb(34, 219, 83);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(0, 146, 30);
+
   animation: fadeUp 1s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  margin: 35px;
+  width: 80%;
+  height: 50%;
+  border-radius: 20px;
+}
+
+.product-card h3 {
+  padding: 15px;
+  margin: 0;
+  color: white;
+}
+
+.product-card p {
+  padding: 0 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.product-card button {
+  width: 90%;
+  margin: 15px;
+  padding: 15px;
+  background: #57b538;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.product-card button:hover {
+  background: #247a07;
 }
 .my_logo {
   color: white;
@@ -46,7 +82,7 @@
 }
 
 nav {
-  background-color: rgb(13, 115, 41);
+  background-color: rgb(24, 145, 56);
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -75,72 +111,6 @@ nav ul li a {
 nav ul li a:hover {
   color: yellow;
 }
-
-.form-box {
-  width: 100%;
-  max-width: 450px;
-  padding: 30px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.login-body h2,
-.regi-body h2 {
-  font-size: 34px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-input,
-select {
-  width: 100%;
-  padding: 12px;
-  background: #eee;
-  border-radius: 6px;
-  border: none;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  background: #74ec94;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #55d45d;
-}
-
-p {
-  font-size: 14.5px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-p a {
-  color: #74ec74;
-  text-decoration: none;
-}
-
-p a:hover {
-  text-decoration: underline;
-}
-
-.login-body h1 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
-}
-
 @keyframes fadeUp {
   from {
     opacity: 0;
