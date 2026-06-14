@@ -5,9 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
+  text-decoration: none;
+  list-style: none;
 }
 
-body {
+.login-body,
+.regi-body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +19,61 @@ body {
   color: #333;
 }
 
+.home-body {
+  background: linear-gradient(to right, #b8ff8c, #c9ffe9);
+}
+
+.collection h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  color: rgba(50, 50, 50, 0.827);
+}
+.collection {
+  max-width: 100%;
+  animation: fadeUp 1s ease-out;
+}
+
 .container {
   margin: 0 15px;
   animation: fadeUp 1s ease-out;
+}
+.my_logo {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  animation: fadeUp 1s ease-out;
+}
+
+nav {
+  background-color: rgb(13, 115, 41);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  animation: fadeUp 1s ease-out;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: yellow;
 }
 
 .form-box {
@@ -29,7 +84,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h2 {
+.login-body h2,
+.regi-body h2 {
   font-size: 34px;
   text-align: center;
   margin-bottom: 20px;
@@ -79,7 +135,7 @@ p a:hover {
   text-decoration: underline;
 }
 
-h1 {
+.login-body h1 {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
