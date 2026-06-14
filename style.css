@@ -18,6 +18,7 @@ body {
 
 .container {
   margin: 0 15px;
+  animation: fadeUp 1s ease-out;
 }
 
 .form-box {
@@ -82,4 +83,18 @@ h1 {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
 }
