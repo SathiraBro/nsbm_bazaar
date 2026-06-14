@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9ffe9);
   color: #333;
 }
 
@@ -48,7 +48,7 @@ select {
 button {
   width: 100%;
   padding: 12px;
-  background: #7494ec;
+  background: #74ec94;
   border-radius: 6px;
   border: none;
   cursor: pointer;
@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-  background: #5577d4;
+  background: #55d45d;
 }
 
 p {
@@ -70,7 +70,7 @@ p {
 }
 
 p a {
-  color: #7494ec;
+  color: #74ec74;
   text-decoration: none;
 }
 
