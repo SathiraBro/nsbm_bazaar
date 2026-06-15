@@ -20,12 +20,14 @@ body {
   animation: fadeUp 1s ease-out;
 }
 .products {
-  max-width: 1500px;
+  min-height: 100%;
   margin: auto;
   padding: 20px;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 80px;
 }
 
