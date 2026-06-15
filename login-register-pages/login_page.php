@@ -12,7 +12,7 @@
   <div class="container">
     <h1>Welcome to NSBM Bazaar</h1>
     <div class="form-box active" id="login-form">
-      <form action="" method="post">
+      <form action="../config/login_process.php" method="post">
         <h2>Login</h2>
         <input type="email" name="email" placeholder="Email" required />
         <input
