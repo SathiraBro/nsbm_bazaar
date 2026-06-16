@@ -16,7 +16,7 @@
         <a href="#">Home</a>
       </li>
       <li>
-        <a href="#">Products</a>
+        <a href="#products_menu">Products</a>
       </li>
       <li>
         <a href="#">Contact</a>
@@ -40,7 +40,7 @@
       <?php } ?>
     </ul>
   </nav>
-  <section class="collection">
+  <section class="collection" id="products_menu">
     <h1>The Collection</h1>
     <p>
       Every product tells a story. Browse our collection of carefully crafted
@@ -78,30 +78,42 @@
 
     <div>
       <h2>Services</h2>
-      <p>Web Development</p>
-      <p>Mobile App Development</p>
-      <p>DevOps</p>
+      <ul>
+        <li> <a href="#">Web Development</a><br></li>
+        <li><a href="#">Mobile App Development</a><br></li>
+        <li><a href="#">DevOps</a><br></li>
+      </ul>
     </div>
 
     <div>
       <h2>Social Links</h2>
-      <p>Instergram</p>
-      <p>Facebook</p>
-      <p>Twitter</p>
+      <ul>
+        <li> <a href="#">Instergram</a></li>
+        <li> <a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
     </div>
 
     <div>
       <h2>Quick Links</h2>
-      <p>Home</p>
-      <p>Products</p>
-      <p>Contact</p>
+      <ul>
+        <li><a href="#">Home</a><br></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+
     </div>
 
     <div>
       <h2>Locations</h2>
-      <p>NSBM Green University</p>
-      <p>Gmail : nsbmbazaar@gmail.com</p>
-      <p>Contact : 074 - 3809575 / 077 - 6595069</p>
+      <ul>
+        <li>
+          <a>NSBM Green University</a>
+        </li>
+        <li><a>Gmail : nsbmbazaar@gmail.com</a></li>
+        <li><a>Contact : 074 - 3809575 / 077 - 6595069</a></li>
+      </ul>
     </div>
 
   </section>
