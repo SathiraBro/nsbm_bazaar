@@ -114,6 +114,47 @@ nav ul li a:hover {
   color: yellow;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgb(24, 145, 56);
+  margin: auto;
+  padding: 20px;
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer h1 {
+  color: white;
+  padding-right: 150px;
+}
+.footer div {
+  color: white;
+  margin: 30px;
+}
+.footer div p {
+  color: white;
+  margin-bottom: 10px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(24, 145, 56);
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 10px;
+}
 @keyframes fadeUp {
   from {
     opacity: 0;
