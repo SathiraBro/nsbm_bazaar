@@ -10,7 +10,7 @@
 
 <body class="home-body">
   <nav>
-    <a class="my_logo" href="./index.html">NSBM Bazaar</a>
+    <a class="my_logo" href="./index.php">NSBM Bazaar</a>
     <ul>
       <li>
         <a href="#">Home</a>

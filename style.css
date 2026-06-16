@@ -22,7 +22,7 @@ body {
 .products {
   min-height: 100%;
   margin: auto;
-  padding: 20px;
+  padding: 100px;
 
   display: flex;
   flex-wrap: wrap;
