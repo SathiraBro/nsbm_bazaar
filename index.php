@@ -13,9 +13,6 @@
     <a class="my_logo" href="./index.php">NSBM Bazaar</a>
     <ul>
       <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
         <a href="#products_menu">Products</a>
       </li>
       <li>
@@ -49,20 +46,6 @@
   </section>
 
   <section class="products">
-    <div class="product-card">
-      <img src="images/download.jpg" alt="" />
-      <h3>Hand Bag</h3>
-      <p>Rs.5000.00</p>
-      <button>Buy Now</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/download.jpg" alt="" />
-      <h3>Hand Bag</h3>
-      <p>Rs.5000.00</p>
-      <button>Buy Now</button>
-    </div>
-
     <div class="product-card">
       <img src="images/download.jpg" alt="" />
       <h3>Hand Bag</h3>

@@ -22,7 +22,7 @@ body {
 .products {
   min-height: 100%;
   margin: auto;
-  padding: 100px;
+  padding: 50px;
 
   display: flex;
   flex-wrap: wrap;
@@ -100,8 +100,11 @@ nav ul li {
   line-height: 80px;
   margin: 0 5px;
   animation: fadeUp 1s ease-out;
+  transition: transform 0.3s ease;
 }
-
+nav ul li:hover {
+  transform: scale(1.1);
+}
 nav ul li a {
   color: white;
   font-size: 17px;
