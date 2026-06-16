@@ -113,6 +113,7 @@ nav ul li a {
 nav ul li a:hover {
   color: yellow;
 }
+
 @keyframes fadeUp {
   from {
     opacity: 0;

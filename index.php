@@ -21,16 +21,28 @@
       <li>
         <a href="#">Contact</a>
       </li>
-      <!-- <li>
-          <a class="logout_btn" href="#">Logout</a>
-        </li> -->
-      <li>
-        <a href="./login-register-pages/register_page.php">Register</a>
-      </li>
+      <?php
+      session_start();
+      if (isset($_SESSION['u_email']) && $_SESSION['u_password']) {
+      ?>
+        <li>
+          <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
+        </li>
+      <?php
+      } else {
+      ?>
+        <li>
+          <a href="./login-register-pages/register_page.php">Register</a>
+        </li>
 
-      <li>
-        <a href="./login-register-pages/login_page.php">Login</a>
-      </li>
+        <li>
+          <a href="./login-register-pages/login_page.php">Login</a>
+        </li>
+      <?php
+      }
+      ?>
+
+
     </ul>
   </nav>
   <section class="collection">
