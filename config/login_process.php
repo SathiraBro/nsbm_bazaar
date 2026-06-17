@@ -21,7 +21,7 @@ $result = mysqli_query($conn, $sql);
 $user = mysqli_fetch_assoc($result);
 
 if ($user['email'] == $email && $user['password'] == $password && $user['role'] == 'admin') {
-    header("location:../admin-pages/admin_page.php");
+    header("location:../admin-pages/overview.php");
 } else if ($user['email'] == $email && $user['password'] == $password && $user['role'] == 'user') {
     header("location:../index.php");
 } else {

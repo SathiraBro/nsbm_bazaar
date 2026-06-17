@@ -19,7 +19,7 @@
                 <li><a href="./overview.php">Overview</a></li>
                 <li><a href="./products.php">Products</a></li>
                 <li><a href="./orders.php">Orders</a></li>
-                <li class="home"><a href="../index.php">Back to Home</a>
+                <li class="home"><a href="../index.php">Back to Bazaar</a>
             </ul>
         </aside>
         <div class="container">
