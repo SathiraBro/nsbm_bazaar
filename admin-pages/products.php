@@ -1,8 +1,8 @@
 <?php include('header.php'); ?>
 
-<h1>Products</h1>
 
 <div class="container mt-4">
+    <h1>Products</h1>
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
             <tr>
