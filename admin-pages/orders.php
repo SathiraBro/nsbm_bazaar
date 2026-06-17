@@ -1,8 +1,5 @@
 <?php include('header.php'); ?>
 
-
-
-
 <h1>Orders</h1>
 
 

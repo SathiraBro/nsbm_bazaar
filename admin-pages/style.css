@@ -19,7 +19,7 @@ body {
 
 .container {
   flex: 1;
-  padding: 20px;
+  padding-top: 50px;
 }
 
 .sidebar {
@@ -30,9 +30,12 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 700;
-  margin-bottom: 40px;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .menu {
@@ -41,16 +44,26 @@ body {
 
 .menu li {
   margin: 10px 0;
+  font-size: 20px;
 }
 
 .menu li a {
   display: block;
-  color: white;
-  padding: 12px 15px;
+
+  padding: 12px;
   border-radius: 10px;
-  transition: 0.3s;
+  text-decoration: none;
+  color: white;
 }
 
 .menu li a:hover {
   background: #1e293b;
+}
+
+.menu .home {
+  margin-top: 100px;
+}
+
+.btn-success {
+  margin-top: 20px;
 }
