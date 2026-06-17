@@ -24,6 +24,9 @@
         $_SESSION['u_password']
       ) { ?>
         <li>
+          <a class="admin_btn" href="./admin-pages/overview.php">Admin</a>
+        </li>
+        <li>
           <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
         </li>
       <?php } else { ?>
