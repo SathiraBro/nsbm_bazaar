@@ -13,10 +13,10 @@
         <a class="my_logo" href="./index.php">NSBM Bazaar</a>
         <ul>
             <li>
-                <a href="#products_menu">Products</a>
+                <a href="./index.php#products_menu">Products</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="./contact_us.php">Contact</a>
             </li>
             <?php session_start();
             if (
