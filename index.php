@@ -1,5 +1,14 @@
 <?php include('header.php') ?>
 
+<?php
+$conn = mysqli_connect("localhost", "root", "", "nsbm_bazaar_db");
+$query = "SELECT * FROM product";
+
+$result = mysqli_query($conn, $query);
+?>
+
+
+
 <section class="collection" id="products_menu">
   <h1>The Collection</h1>
   <p>
@@ -9,12 +18,19 @@
 </section>
 
 <section class="products">
-  <div class="product-card">
-    <img src="images/download.jpg" alt="" />
-    <h3>Hand Bag</h3>
-    <p>Rs.5000.00</p>
-    <button>Buy Now</button>
-  </div>
+  <?php
+  while ($row = mysqli_fetch_assoc($result)) {
+  ?>
+    <div class="product-card">
+      <img src="./admin-pages/product_image/<?php echo $row['image']  ?>" alt="nothing" />
+      <h3><?php echo $row['p_name'] ?></h3>
+      <p>Rs.<?php echo $row['price'] ?></p>
+      <button>Buy Now</button>
+    </div>
+  <?php
+  }
+
+  ?>
 </section>
 
 
