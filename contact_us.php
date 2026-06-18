@@ -7,37 +7,34 @@
 <div class="display_flex">
     <div class="leftside">
         <h2 class="contact_h2">Get in touch</h2><br>
-
         <div class="contact-item"> <i class="fa-solid fa-location-dot"></i>
-            <span class="text"><a href="https://www.google.com/maps/search/?api=1&query=NSBM+Green+University+Sri+Lanka" 
-            target="_blank">NSBM Green University</a></span></div><br><br>
-
+            <p>Mahenwaththa, Pitipana, Homagama, Sri Lanka</p></div><br>
         <div class="contact-item"> <i class="fa-solid fa-envelope"></i>
-            <span class="text"><a href="mailto:yourmail@gmail.com">nsbmbazaar@gmail.com</a></span></div><br><br>
-
+            <p>sandupahewapathirana@gmail.com</p></div><br>
         <div class="contact-item"> <i class="fa-solid fa-phone"></i>
-            <span class="text"> <a href="tel:+94 74 380 9575">+94 74 380 9575</a></span></div><br><br>
-
+            +94 77 659 5069</div><br>
         <div class="contact-item"> <i class="fa-brands fa-whatsapp"></i>
-            <span class="text"><a href="https://wa.me/94771234567" target="_blank">+94 77 659 5069</a></span></div><br><br>
-
+            +94 659 5069</div><br>
         <div class="contact-item"> <i class="fa-brands fa-instagram"></i>
-            <span class="text"><a href="https://www.instagram.com/yourusername/" target="_blank">@nsbm_bazaar</a></span></div>
+            nsbm_bazaar</div>
        
         
 
+
+
+
     </div>
     <div class="rightside">
-        <input type="text" placeholder="Name" class="name"><br><br>
-        <input type="email" placeholder="Email" class="email"><br><br>
-        <textarea rows="5" cols="20" placeholder="Message" class="message"></textarea><br><br>
-        <input type="submit" value="Send" class="send">
+        <input type="text" placeholder="Name" class="name"><br>
+        <input type="email" placeholder="Email" class="email"><br>
+        <textarea rows="5" cols="20" placeholder="Message" class="message"></textarea>
+
     </div>
 
-      
+
+        
+
 </div>
-
-
 
     
     
