@@ -32,6 +32,13 @@
         }
         ?>
       </h6>
+      <h6 class="not-valid-values">
+        <?php
+        if (isset($_GET['login'])) {
+          echo $_GET['login'];
+        }
+        ?>
+      </h6>
       <p>
         Don't have an account?
         <a href="./register_page.php">Register</a>

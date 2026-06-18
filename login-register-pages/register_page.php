@@ -29,7 +29,7 @@
       <button type="submit" name="register">Register</button>
       <p>
         Already have an account?
-        <a href="./login_page.html">Login</a>
+        <a href="./login_page.php">Login</a>
       </p>
     </form>
   </div>

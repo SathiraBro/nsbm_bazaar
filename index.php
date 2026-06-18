@@ -1,6 +1,8 @@
 <?php include('header.php') ?>
 
 <?php
+
+session_start();
 $conn = mysqli_connect("localhost", "root", "", "nsbm_bazaar_db");
 $query = "SELECT * FROM product";
 
@@ -25,7 +27,18 @@ $result = mysqli_query($conn, $query);
       <img src="./admin-pages/product_image/<?php echo $row['image']  ?>" alt="nothing" />
       <h3><?php echo $row['p_name'] ?></h3>
       <p>Rs.<?php echo $row['price'] ?></p>
-      <button>Buy Now</button>
+      <?php
+      if ($_SESSION['u_email'] && $_SESSION['u_password'] && $_SESSION['u_role'] == "user") {
+      ?>
+        <button><a href="orders.php">Buy Now</a></button>
+      <?php
+      } else {
+      ?>
+        <button><a href="./login-register-pages/login_page.php?login=Please login to purchase items.">Buy Now</a></button>
+      <?php
+      }
+      ?>
+
     </div>
   <?php
   }
