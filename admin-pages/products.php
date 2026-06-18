@@ -36,8 +36,9 @@ $result = mysqli_query($conn, $sql);
                         <img src="../admin-pages/product_image/<?php echo $row['image'] ?>" width="100" alt="Pakaya">
                     </td>
                     <td>
-                        <button class="btn btn-warning btn-sm">Edit</button>
-                        <button class="btn btn-danger btn-sm">Delete</button>
+
+                        <a class="btn btn-danger btn-sm">Edit</a>
+                        <a class="btn btn-warning btn-sm" href="../config/delete_product_process.php?id=<?php echo $row['id'] ?>">Delete</a>
                     </td>
                 </tr>
             <?php
