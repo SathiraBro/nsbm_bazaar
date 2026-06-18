@@ -68,5 +68,14 @@ body {
 }
 
 .btn-success {
-  margin-top: 20px;
+  margin: 20px;
+  float: right;
+}
+
+.form-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-control {
+  margin-bottom: 20px;
 }
