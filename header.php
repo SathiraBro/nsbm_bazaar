@@ -21,7 +21,9 @@
             <?php session_start();
             if (
                 isset($_SESSION['u_email']) &&
-                $_SESSION['u_password']
+                isset($_SESSION['u_password']) &&
+                $_SESSION['u_role'] == 'admin'
+
             ) { ?>
                 <li>
                     <a class="admin_btn" href="./admin-pages/overview.php">Admin</a>
@@ -29,7 +31,18 @@
                 <li>
                     <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
                 </li>
-            <?php } else { ?>
+            <?php
+            } else if (
+                isset($_SESSION['u_email']) &&
+                isset($_SESSION['u_password']) &&
+                $_SESSION['u_role'] == 'user'
+            ) {
+            ?>
+                <li>
+                    <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
+                </li>
+            <?php
+            } else { ?>
                 <li>
                     <a href="./login-register-pages/register_page.php">Register</a>
                 </li>

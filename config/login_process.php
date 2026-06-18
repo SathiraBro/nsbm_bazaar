@@ -10,15 +10,16 @@ if (!$conn) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$_SESSION['u_email'] = $email;
-$_SESSION['u_password'] = $password;
-
 $sql = "SELECT * FROM user
         WHERE email='$email'";
 
 $result = mysqli_query($conn, $sql);
 
 $user = mysqli_fetch_assoc($result);
+
+$_SESSION['u_email'] = $user['email'];
+$_SESSION['u_password'] = $user['password'];
+$_SESSION['u_role'] = $user['role'];
 
 if ($user['email'] == $email && $user['password'] == $password && $user['role'] == 'admin') {
     header("location:../admin-pages/overview.php");
