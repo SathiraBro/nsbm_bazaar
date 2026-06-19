@@ -30,15 +30,15 @@ $result = mysqli_query($conn, $query);
       <?php
       if ($_SESSION['u_email'] && $_SESSION['u_password'] && $_SESSION['u_role'] == "user") {
       ?>
-        <button><a href="orders.php">Buy Now</a></button>
+        <button><a href="orders.php">Buy</a></button>
       <?php
       } else if ($_SESSION['u_email'] && $_SESSION['u_password'] && $_SESSION['u_role'] == "admin") {
       ?>
-        <button><a href="./admin-pages/products.php">Buy Now</a></button>
+        <button><a href="./admin-pages/products.php">Buy</a></button>
       <?php
       } else {
       ?>
-        <button><a href="./login-register-pages/login_page.php?login=Please login to purchase items.">Buy Now</a></button>
+        <button><a href="./login-register-pages/login_page.php?login=Please login to purchase items.">Buy</a></button>
       <?php
       }
       ?>

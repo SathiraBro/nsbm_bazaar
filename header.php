@@ -19,6 +19,9 @@
             <li>
                 <a href="./contact_us.php">Contact</a>
             </li>
+            <li>
+                <a href="./orders.php">Your Orders</a>
+            </li>
             <?php session_start();
             if (
                 isset($_SESSION['u_email']) &&
@@ -27,7 +30,7 @@
 
             ) { ?>
                 <li>
-                    <a class="admin_btn" href="./admin-pages/overview.php">Admin</a>
+                    <a class=" admin_btn" href="./admin-pages/overview.php">Admin</a>
                 </li>
                 <li>
                     <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
@@ -52,5 +55,6 @@
                     <a href="./login-register-pages/login_page.php">Login</a>
                 </li>
             <?php } ?>
+
         </ul>
     </nav>
