@@ -37,10 +37,45 @@ $result = mysqli_query($conn, $sql);
                     </td>
                     <td>
 
-                        <a class="btn btn-danger btn-sm">Edit</a>
-                        <a class="btn btn-warning btn-sm" href="../config/delete_product_process.php?id=<?php echo $row['id'] ?>">Delete</a>
+                        <a class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#updateModal<?php echo $row['id']; ?>">Edit</a>
+                        <a class="btn btn-warning btn-sm" href="../config/delete_product_process.php?id=<?php echo $row['id']; ?>">Delete</a>
                     </td>
                 </tr>
+                <form action="../config/update_product_process.php" method="post" enctype="multipart/form-data">
+                    <div class="modal fade" id="updateModal<?php echo $row['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Update Product</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                    <div class="form-group">
+                                        <label for="p_name" class="form-label">Product Name :</label>
+                                        <input type="text" name="p_name" class="form-control" value="<?php echo $row['p_name']; ?>" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="category" class="form-label">Category : </label>
+                                        <input type="text" name="category" class="form-control" value="<?php echo $row['category']; ?>" />
+                                    </div>
+                                    <div class=" form-group">
+                                        <label for="price" class="form-label">Price : </label>
+                                        <input type="number" name="price" class="form-control" value="<?php echo $row['price']; ?>" />
+                                    </div>
+                                    <div class=" form-group">
+                                        <label for="stock" class="form-label">Stock : </label>
+                                        <input type="number" name="stock" class="form-control" value="<?php echo $row['stock']; ?>" />
+                                    </div>
+                                </div>
+                                <div class=" modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <input type="submit" class="btn btn-success" value="Update" name="update_product"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             <?php
             }
             ?>
@@ -86,6 +121,8 @@ $result = mysqli_query($conn, $sql);
             </div>
         </div>
     </form>
+
+
 </div>
 
 
