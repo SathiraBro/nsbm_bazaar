@@ -1,43 +1,57 @@
 <?php include('header.php') ?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
-<div class="contact_h1"><h1>Contact Us</h1></div><br>
-<div class="contact_h5"><h5>Any question or remarks? Just write us message!</h5></div><br>
-<div class="display_flex">
-    <div class="leftside">
-        <h2 class="contact_h2">Get in touch</h2><br>
-        <div class="contact-item"> <i class="fa-solid fa-location-dot"></i>
-            <p>Mahenwaththa, Pitipana, Homagama, Sri Lanka</p></div><br>
-        <div class="contact-item"> <i class="fa-solid fa-envelope"></i>
-            <p>sandupahewapathirana@gmail.com</p></div><br>
-        <div class="contact-item"> <i class="fa-solid fa-phone"></i>
-            +94 77 659 5069</div><br>
-        <div class="contact-item"> <i class="fa-brands fa-whatsapp"></i>
-            +94 659 5069</div><br>
-        <div class="contact-item"> <i class="fa-brands fa-instagram"></i>
-            nsbm_bazaar</div>
-       
-        
+<section class="contact-section">
 
-
-
-
-    </div>
-    <div class="rightside">
-        <input type="text" placeholder="Name" class="name"><br>
-        <input type="email" placeholder="Email" class="email"><br>
-        <textarea rows="5" cols="20" placeholder="Message" class="message"></textarea>
-
+    <div class="contact_h1">
+        <h1>Contact Us</h1>
     </div>
 
+    <div class="contact_h5">
+        <h5>Any question or remarks? Just write us a message!</h5>
+    </div>
+    <div class="display_flex">
+        <div class="leftside">
+            <h2 class="contact_h2">Get In Touch</h2>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Mahenwaththa, Pitipana, Homagama, Sri Lanka</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>sandupahewapathirana@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <p>+94 77 659 5069</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>+94 77 659 5069</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-instagram"></i>
+                <p>@nsbm_bazaar</p>
+            </div>
+        </div>
 
-        
+        <div class="rightside">
+            <form>
+                <input type="text" placeholder="Your Name" class="name" required>
+                <input type="email" placeholder="Your Email" class="email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="6" placeholder="Write your message..." class="message" required></textarea>
+                <button type="submit" class="send-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
 
-</div>
 
-    
-    
+
 
 
 <?php include('footer.php') ?>
