@@ -22,7 +22,7 @@ $_SESSION['u_password'] = $user['password'];
 $_SESSION['u_role'] = $user['role'];
 
 if ($user['email'] == $email && $user['password'] == $password && $user['role'] == 'admin') {
-    header("location:../admin-pages/overview.php");
+    header("location:../admin-pages/products.php");
 } else if ($user['email'] == $email && $user['password'] == $password && $user['role'] == 'user') {
     header("location:../index.php");
 } else {

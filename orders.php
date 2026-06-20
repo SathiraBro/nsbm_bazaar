@@ -7,5 +7,5 @@ $user_email = $_SESSION['u_email'];
 $query = "INSERT INTO orders(user_email, product_id)
           VALUES('$user_email', '$product_id')";
 mysqli_query($conn, $query);
-header("Location: index.php");
+header("Location: your_order.php");
 exit();

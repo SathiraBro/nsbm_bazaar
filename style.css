@@ -211,6 +211,10 @@ nav ul li a:hover {
   color: #d8f5de;
 }
 
+.container {
+  animation: fadeUp 1s ease-out;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
