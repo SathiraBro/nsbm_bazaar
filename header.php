@@ -34,7 +34,7 @@
 
             ) { ?>
                 <li>
-                    <a class=" admin_btn" href="./admin-pages/overview.php">Admin</a>
+                    <a class=" admin_btn" href="./admin-pages/products.php">Admin</a>
                 </li>
                 <li>
                     <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>

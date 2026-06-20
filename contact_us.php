@@ -19,7 +19,7 @@
             </div>
             <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
-                <p>sandupahewapathirana@gmail.com</p>
+                <p>nsbmbazaar@gmail.com</p>
             </div>
             <div class="contact-item">
                 <i class="fa-solid fa-phone"></i>
