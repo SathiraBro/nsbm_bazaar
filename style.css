@@ -405,3 +405,143 @@ nav ul li a:hover {
     padding: 35px 25px;
   }
 }
+/* Rizandu Hutto */
+.about-page {
+    background: linear-gradient(to right, #b8ff8c, #c9ffe9);
+    padding: 60px 8%;
+    animation: fadeUp 1s ease-out;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-small-title {
+    letter-spacing: 5px;
+    color: #159947;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    line-height: 1.7;
+}
+
+.about-project {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    /*background: #eff4f8;*/
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeUp 1s ease-out;
+}
+
+
+.about-project h2 {
+    color: #159947;
+    margin-bottom: 15px;
+}
+
+.about-project p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #159947;
+    font-size: 30px;
+    margin: 45px 0 25px;
+}
+
+.team-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.single-member {
+    max-width: 380px;
+    margin: auto;
+}
+
+.team-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.team-card:hover{
+  transform: scale(1.02);
+
+}
+
+.team-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.team-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.team-content span {
+    display: inline-block;
+    background: #dff0d8;
+    color: #111;
+    padding: 8px 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.team-content h3 {
+    color: #111;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.team-content h4 {
+    color: #159947;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.team-content p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+    .team-row {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-page {
+        padding: 40px 5%;
+    }
+}
