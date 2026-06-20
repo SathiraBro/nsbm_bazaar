@@ -3,13 +3,34 @@
 <?php
 
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "nsbm_bazaar_db");
-$query = "SELECT * FROM product";
 
-$result = mysqli_query($conn, $query);
+$conn = mysqli_connect("localhost", "root", "", "nsbm_bazaar_db");
+
+if (isset($_GET['search']) && $_GET['search'] != "") {
+  $search = $_GET['search'];
+  $query = "SELECT * FROM product
+              WHERE p_name LIKE '%$search%'
+              OR price LIKE '%$search%'";
+  $result = mysqli_query($conn, $query);
+} else {
+  $query = "SELECT * FROM product";
+  $result = mysqli_query($conn, $query);
+}
+
 ?>
 
 
+<form action="" method="GET" class="search-form">
+  <input
+    type="text"
+    name="search"
+    class="search-input"
+    placeholder="Search products..."
+    value="<?php if (isset($_GET['search'])) echo $_GET['search']; ?>">
+  <button type="submit" class="search-btn">
+    Search
+  </button>
+</form>
 
 <section class="collection" id="products_menu">
   <h1>The Collection</h1>
@@ -20,34 +41,33 @@ $result = mysqli_query($conn, $query);
 </section>
 
 <section class="products">
-  <?php
-  while ($row = mysqli_fetch_assoc($result)) {
-  ?>
-    <div class="product-card">
-      <img src="./admin-pages/product_image/<?php echo $row['image']  ?>" alt="nothing" />
-      <h3><?php echo $row['p_name'] ?></h3>
-      <p>Rs.<?php echo $row['price'] ?></p>
-      <?php
-      if ($_SESSION['u_email'] && $_SESSION['u_password'] && $_SESSION['u_role'] == "user") {
-      ?>
-        <button><a href="orders.php">Buy</a></button>
-      <?php
-      } else if ($_SESSION['u_email'] && $_SESSION['u_password'] && $_SESSION['u_role'] == "admin") {
-      ?>
-        <button><a href="./admin-pages/products.php">Buy</a></button>
-      <?php
-      } else {
-      ?>
-        <button><a href="./login-register-pages/login_page.php?login=Please login to purchase items.">Buy</a></button>
-      <?php
-      }
-      ?>
 
-    </div>
   <?php
+  if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+  ?>
+      <div class="product-card">
+        <img src="./admin-pages/product_image/<?php echo $row['image']; ?>" alt="">
+        <h3><?php echo $row['p_name']; ?></h3>
+        <p>Rs.<?php echo $row['price']; ?></p>
+
+        <?php
+        if (isset($_SESSION['u_role']) && $_SESSION['u_role'] == "user") {
+          echo '<button><a href="orders.php">Buy</a></button>';
+        } else if (isset($_SESSION['u_role']) && $_SESSION['u_role'] == "admin") {
+          echo '<button><a href="./admin-pages/products.php">Buy</a></button>';
+        } else {
+          echo '<button><a href="./login-register-pages/login_page.php?login=Please login to purchase items.">Buy</a></button>';
+        }
+        ?>
+      </div>
+  <?php
+    }
+  } else {
+    echo "<h2>No products found.</h2>";
   }
-
   ?>
+
 </section>
 
 
