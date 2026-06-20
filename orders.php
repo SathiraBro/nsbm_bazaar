@@ -1,19 +1,11 @@
-<?php include('header.php'); ?>
+<?php
 
-</div>
-</div>
-</div>
-<div class="container mt-4">
-    <table class="table table-striped table-bordered">
-        <thead class="table-dark">
-            <tr>
-                <th scope="col">Image</th>
-                <th scope="col">Product Name</th>
-                <th scope="col">Price</th>
-            </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-    </table>
-</div>
+session_start();
+$conn = mysqli_connect("localhost", "root", "", "nsbm_bazaar_db");
+$product_id = $_GET['id'];
+$user_email = $_SESSION['u_email'];
+$query = "INSERT INTO orders(user_email, product_id)
+          VALUES('$user_email', '$product_id')";
+mysqli_query($conn, $query);
+header("Location: index.php");
+exit();

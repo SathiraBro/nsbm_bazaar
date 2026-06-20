@@ -22,10 +22,11 @@
             <li>
                 <a href="./contact_us.php">Contact</a>
             </li>
-            <li>
-                <a href="./orders.php">Your Orders</a>
-            </li>
-            <?php session_start();
+            <?php
+
+            if (session_status() === PHP_SESSION_NONE) {
+                session_start();
+            }
             if (
                 isset($_SESSION['u_email']) &&
                 isset($_SESSION['u_password']) &&
@@ -45,6 +46,9 @@
                 $_SESSION['u_role'] == 'user'
             ) {
             ?>
+                <li>
+                    <a href="./your_order.php">Your Orders</a>
+                </li>
                 <li>
                     <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
                 </li>

@@ -94,6 +94,7 @@ body {
   background: #fff;
   border-radius: 50px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 1s ease-out;
 }
 
 .search-input {
