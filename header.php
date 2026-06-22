@@ -19,9 +19,6 @@
             <li>
                 <a href="./index.php#products_menu">Products</a>
             </li>
-            <li>
-                <a href="./contact_us.php">Contact</a>
-            </li>
             <?php
 
             if (session_status() === PHP_SESSION_NONE) {
@@ -37,9 +34,6 @@
                     <a class=" admin_btn" href="./admin-pages/products.php">Admin</a>
                 </li>
                 <li>
-                    <a class=" admin_btn" href="./about_us.php">About Us</a>
-                </li>
-                <li>
                     <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
                 </li>
             <?php
@@ -53,7 +47,10 @@
                     <a href="./your_order.php">Your Orders</a>
                 </li>
                 <li>
-                    <a class=" admin_btn" href="./about_us.php">About Us</a>
+                    <a href="./contact_us.php">Contact</a>
+                </li>
+                <li>
+                    <a class=" admin_btn" href="./about_us.php">About</a>
                 </li>
                 <li>
                     <a class="logout_btn" href="./login-register-pages/logout.php">Logout</a>
@@ -62,7 +59,10 @@
             <?php
             } else { ?>
                 <li>
-                    <a class=" admin_btn" href="./about_us.php">About Us</a>
+                    <a href="./contact_us.php">Contact</a>
+                </li>
+                <li>
+                    <a class=" admin_btn" href="./about_us.php">About</a>
                 </li>
                 <li>
                     <a href="./login-register-pages/register_page.php">Register</a>
