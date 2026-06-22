@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="./index.php">Products</a></li>
                 <li><a href="./contact_us.php">Contact</a></li>
-                <li><a href="./index.php">About Us</a></li>
+                <li><a href="./about_us.php">About Us</a></li>
             </ul>
         </div>
         <div class="footer-section">
