@@ -53,11 +53,11 @@ if (isset($_GET['search']) && $_GET['search'] != "") {
 
         <?php
         if (isset($_SESSION['u_role']) && $_SESSION['u_role'] == "user") {
-          echo '<button><a href="orders.php?id=' . $row['id'] . '">Buy</a></button>';
+          echo '<a href="./login-register-pages/login_page.php?login=Please login to purchase items."><button>Buy</button></a>';
         } else if (isset($_SESSION['u_role']) && $_SESSION['u_role'] == "admin") {
-          echo '<button><a href="./admin-pages/products.php">Buy</a></button>';
+          echo '<a href="./login-register-pages/login_page.php?login=Please login to purchase items."><button>Buy</button></a>';
         } else {
-          echo '<button><a href="./login-register-pages/login_page.php?login=Please login to purchase items.">Buy</a></button>';
+          echo '<a href="./login-register-pages/login_page.php?login=Please login to purchase items."><button>Buy</button></a>';
         }
         ?>
       </div>

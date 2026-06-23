@@ -15,7 +15,8 @@
             <h2 class="contact_h2">Get In Touch</h2>
             <div class="contact-item">
                 <i class="fa-solid fa-location-dot"></i>
-                <p>Mahenwaththa, Pitipana, Homagama, Sri Lanka</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=NSBM+Green+University+Sri+Lanka"
+                    target="_blank">Mahenwaththa, Pitipana, Homagama, Sri Lanka</a>
             </div>
             <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
