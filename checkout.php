@@ -12,6 +12,6 @@ AND status='Pending'
 ";
 mysqli_query($conn, $query);
 
-header("Location: your_order.php");
+header("Location: ./payment-page/payment-page.php");
 
 exit();
